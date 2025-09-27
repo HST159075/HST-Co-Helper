@@ -1,0 +1,99 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+
+    background: #2c3e50;
+    padding: 12px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 200px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #1abc9c;
+}
+
+/* Features section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.card.feature {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.card.feature:hover {
+    transform: translateY(-5px);
+}
+
+.card.feature h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* Main content */
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+main h1 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+main p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
