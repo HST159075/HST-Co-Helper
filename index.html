@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My first website . suppurt</title>
+  <link rel="stylesheet" href="website.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="website.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "FVTZAOGcGNclcDSZq",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">T</div>
+        <div>
+          <div style="font-size:14px">HST WEB</div>
+          <div style="font-size:12px;color:var(--muted)">Emarganci report</div>
+        </div>
+      </div>
+      <nav>
+        <button class="mobile-toggle" aria-label="toggle menu" onclick="toggleMenu()">☰</button>
+        <ul id="navlist">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="#services">help</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="contact.html">contect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div>
+        <h1>A creative and analytical thinker, passionate about learning, problem-solving, and delivering impactful
+          results.</h1>
+        <div class="cta">
+          <a class="btn" href="#contact">হবে, কাজ শুরু কর</a>
+          <a style="align-self:center;text-decoration:none;color:var(--muted)" href="#portfolio">আমার কাজ দেখো →</a>
+        </div>
+        <div class="features" aria-hidden="false">
+          <div class="card feature">
+            <div style="font-size:24px">⚡</div>
+            <h3>দ্রুত লোডিং</h3>
+            <p style="color:var(--muted);font-size:14px;margin-top:6px">হালকা কোড; ম‍্যারাথন লোড নয়।</p>
+          </div>
+          <div class="card feature">
+            <div style="font-size:24px">🔒</div>
+            <h3>সীমিত সুরক্ষা ফিচার</h3>
+            <p style="color:var(--muted);font-size:14px;margin-top:6px">বেসিক গঠন, HTTPS লাগবে হোস্টিং সেটাপ এ।</p>
+          </div>
+          <div class="card feature">
+            <div style="font-size:24px">✍️</div>
+            <h3>সহজ সম্পাদন</h3>
+            <p style="color:var(--muted);font-size:14px;margin-top:6px">আর্টিকেল, ছবি বা যোগাযোগ তথ্য মুহূর্তে বদলাও।
+            </p>
+          </div>
+        </div>
+      </div>
+      <aside class="card">
+        <h3 style="margin-top:0">বেসিক যোগাযোগ</h3>
+        <p style="margin:6px 0;color:var(--muted)">Name: your name<br>Email: example@mail.com<br>Number: +88 01XXXXXXXXX
+        </p>
+        <p style="font-size:13px;color:var(--muted)">চিট-শিট: ফাইলটি নামিয়ে নিয়ে .html নামে রেখে ব্রাউজারে খুললে কাজ
+          করবে।</p>
+      </aside>
+    </section>
+
+    <section id="about" class="about">
+      <div style="flex:1">
+        <h2>আমাদের কথা</h2>
+        <p style="color:var(--muted)">এই টেমপ্লেটটি তোমার প্রাথমিক অনলাইন উপস্থিতি তৈরির জন্য নির্মিত। চাইলে আমি আরও
+          পেজ, ব্লগ সেকশন, এবং ফরম্যাটিং যোগ করব।</p>
+      </div>
+      <div style="width:320px">
+        <div class="card">
+          <h4 style="margin:0">কী আছে এই টেমপ্লেটে?</h4>
+          <ul style="margin-top:12px;color:var(--muted)">
+            <li>হিরো সেকশন, সার্ভিস লিস্ট, পোর্টফোলিও গ্রিড</li>
+            <li>রেসপনসিভ লেআউট</li>
+            <li>কন্ট্যাক্ট লিংক (mailto) — বা তুমি চাইলে ফর্ম যুক্ত করা যাবে</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Help</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+        <div class="card">
+          <h3 style="margin:0">Web Design</h3>
+          <p style="color:var(--muted);margin-top:8px">রেসপনসিভ ডিজাইন, মোবাইল ফ্রেন্ডলি লেআউট।</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0">Customization</h3>
+          <p style="color:var(--muted);margin-top:8px">তুমি যা চাও সেটাই যোগ করব — ব্লগ, গ্যালারি, বা ই-কমার্স।</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0">Hosting & Domain</h3>
+          <p style="color:var(--muted);margin-top:8px">হোস্টিং সেটআপ ও ডোমেইন সংযুক্তি সাহায্য করতে পারি।</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" style="margin-top:26px">
+      <h2>portfolio</h2>
+      <div class="portfolio" style="margin-top:12px">
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=800&q=60&auto=format&fit=crop"
+          alt="sample">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=60&auto=format&fit=crop"
+          alt="sample">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=60&auto=format&fit=crop"
+          alt="sample">
+      </div>
+    </section>
+<div class="last-part">
+    <div class="col-md-6 py-3">
+      <h3>Contact from</h3>
+      <div class="from-group">
+        <h5 for="name">Name</h5>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+      </div>
+      <div class="from-group">
+        <h5 for="email">Email</h5>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+      </div>
+      <div class="from-group">
+        <h5 for="message">Message</h5>
+        <textarea id="message" rows="3" class="form-control"></textarea>
+      </div>
+      <br>
+      <button class="btn btn-primary" onclick="sendmail()" type="submit">submit</button>
+    </div>
+
+
+    <aside class="card">
+      <h3 style="margin-top:0">Email</h3>
+      <p style="color:var(--muted)">alamtasin18@mail.com</p>
+      <h3 style="margin-bottom:6px">office</h3>
+      <p style="color:var(--muted);font-size:14px">Hathazari, Chattogram<br> Bangladesh</p>
+    </aside>
+</div>
+  </main>
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© HST All rights reserved</div>
+        <div style="color:var(--muted)">Full strick debloper MD TASINUL ALAM</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
